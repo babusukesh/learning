@@ -18,7 +18,7 @@ def address_extract(addr,parag):
       idx_list.extend(list(re.search(i, parag, re.I).span()))
       # print(re.search(i, parag, re.I))
     except Exception as e:
-      print('Given word/token not present in address/data -------- Spelling mistake')
+      print('Given word/token not present in address/database -------- Spelling mistake')
       para_tokesn = [i.strip(',') for i in parag.split(' ') if len(i)>0]
       word = process.extractOne(i,para_tokesn)[0]
       # print(word)
